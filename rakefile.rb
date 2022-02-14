@@ -1,7 +1,6 @@
 #!/usr/bin/ruby -wKU
 
-task :defalt = :run
+task :default => :run
 
 task :run do
-	require './lib/hello'
-end
+  ruby '-Ilib', 'lib/hello.rb'
